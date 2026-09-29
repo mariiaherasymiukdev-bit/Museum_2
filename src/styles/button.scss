@@ -7,13 +7,27 @@
 
   &__primary {
     height: 60px;
-    width: 279px;
+    width: 280px;
     background-color: $b-default;
     color: $c-white;
     margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $b-hover;
+    }
+
+    &:active {
+      background-color: $b-pressed;
+    }
 
     @include on-tablet {
       width: 330px;
+      margin-inline: 0;
     }
 
     @include on-desktop {
@@ -23,12 +37,21 @@
 
   &__secondary {
     height: 60px;
-    width: 279px;
+    width: 280px;
     background-color: $c-white;
     color: $c-main;
-    margin-top: 20px;
-    margin-bottom: 80px;
+    margin: 20px auto 80px;
     border: 1px solid $c-main;
+
+    &:hover {
+      color: $b-hover;
+      border-color: $b-hover;
+    }
+
+    &:active {
+      color: $b-pressed;
+      border-color: $b-pressed;
+    }
 
     @include on-tablet {
       display: none;

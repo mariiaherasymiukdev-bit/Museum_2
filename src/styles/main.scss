@@ -41,3 +41,7 @@ body {
 
   @include content-padding-inline;
 }
+
+body:has(.menu:target) {
+  overflow: hidden;
+}

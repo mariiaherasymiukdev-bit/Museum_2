@@ -298,7 +298,10 @@
         id="visit"
       >
         <div class="visit__image">
-          <img src="./src/images/backgrounds/bg-registr.svg" alt="visit img">
+          <img
+            src="./src/images/backgrounds/bg-registr.svg"
+            alt="visit img"
+          />
         </div>
         <div class="visit__info">
           <h2 class="visit-title">Сплануйте візит до музею</h2>
@@ -376,23 +379,26 @@
           Першими дізнавайтесь про новини музею та розіграші, отримуйте
           запрошення на події та читайте статті від кураторів
         </p>
-        <div class="subscribe-form">
+        <form
+          class="subscribe-form"
+          id="subscribe-form"
+        >
           <input
             class="subscribe-form__input main-text2"
             type="email"
             id="email"
             name="email"
-            placeholder="email@example.com"
+            placeholder="e-mail"
             required
           />
 
-          <a
-            href="#subscribe"
+          <button
+            type="submit"
             class="button__primary button"
           >
             Підписатись
-          </a>
-        </div>
+          </button>
+        </form>
       </section>
     </main>
 
