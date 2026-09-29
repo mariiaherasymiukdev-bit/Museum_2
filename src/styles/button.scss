@@ -1,0 +1,66 @@
+.button {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  &__primary {
+    height: 60px;
+    width: 279px;
+    background-color: $b-default;
+    color: $c-white;
+    margin-top: 40px;
+
+    @include on-tablet {
+      width: 330px;
+    }
+
+    @include on-desktop {
+      width: 270px;
+    }
+  }
+
+  &__secondary {
+    height: 60px;
+    width: 279px;
+    background-color: $c-white;
+    color: $c-main;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    border: 1px solid $c-main;
+
+    @include on-tablet {
+      display: none;
+    }
+
+    &--tablet {
+      display: none;
+
+      @include on-tablet {
+        display: flex;
+        margin: 0;
+        width: 210px;
+      }
+
+      @include on-desktop {
+        width: 270px;
+      }
+    }
+
+    &-icon {
+      display: inline-block;
+
+      width: 20px;
+      height: 20px;
+      margin-left: 6px;
+
+      background-color: currentColor;
+
+      mask-image: url('../images/icons/arrow.svg');
+      mask-position: center;
+      mask-repeat: no-repeat;
+      mask-size: contain;
+    }
+  }
+}
